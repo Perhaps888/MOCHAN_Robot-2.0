@@ -1,0 +1,36 @@
+# ---- 本地工具链 / 缓存（体积大，可随时删除后重下）----
+_tmpdl/
+_tmp*
+*.log
+
+# ---- ESP-IDF 构建产物 ----
+1/MOCHAN/build/
+2/build/
+build/
+*.bin.tmp
+
+# 注：release/*.bin 是交付产物，**不要**忽略
+
+# ---- Android 构建中间产物 ----
+3/build/
+*.dex
+*.class
+*.idsig
+
+# ---- 签名文件（build_apk.sh 会自动生成 debug.keystore）----
+*.keystore
+*.jks
+
+# ---- 内部工作记录（不发布）----
+.workbuddy/
+
+# ---- 编辑器 / 系统 ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# ---- Python ----
+__pycache__/
+*.pyc
